@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Portfolio on Gabriel Quinteros</title>
+    <link>https://gabeeh94.github.io/Data_Portfolio/</link>
+    <description>Recent content in Data Portfolio on Gabriel Quinteros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Dec 2022 11:14:48 -0400</lastBuildDate><atom:link href="https://gabeeh94.github.io/Data_Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project IV: Clustering of server profiles</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/post/chapter-4/</link>
+      <pubDate>Sun, 04 Dec 2022 11:14:48 -0400</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/post/chapter-4/</guid>
+      <description>For this project, my client provided a database with a number of profiles which had a different set of profiles. The objective was:
+Clustering the profiles with similar accesses Selecting base profiles for each cluster For each profile that is not a base profile, get a list of all the accesses that differ with the base profile of its own cluster To complete this I used a machine learning algorithm called &amp;ldquo;K-Modes&amp;rdquo; similar to the well-known k-means but used for categorical data, that is, non-numerical data like text, characteristics, etc.</description>
+    </item>
+    
+    <item>
+      <title>Project III: Suicide Rate Analysis using SQL and Python</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/post/chapter-3/</link>
+      <pubDate>Wed, 09 Mar 2022 11:13:32 -0400</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/post/chapter-3/</guid>
+      <description>An analysis of the suicide rate in the world using SQL and Python to clean and extrapolate conclusions from the data including a regression and an ANOVA test to see if there is a relationship between GDP per Capita or Sunshine level and the suicide rate.
+Data Loading and Cleaning Sources:
+Suicide rate (World Health Organzation): https://www.who.int/data/gho/data/indicators/indicator-details/GHO/crude-suicide-rates-(per-100-000-population)
+GDP per Capita PPP (World Bank): https://databank.worldbank.org/reports.aspx?source=2&amp;amp;series=NY.GDP.PCAP.PP.CD&amp;amp;country=
+Mean Annual Sunshine Hours (United Nations): https://data.</description>
+    </item>
+    
+    <item>
+      <title>Project II: Regression based on the Economic Freedom index</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/post/chapter-2/</link>
+      <pubDate>Sun, 20 Feb 2022 11:00:59 -0400</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/post/chapter-2/</guid>
+      <description>Is there a relationship between the level of economic freedom in a country and its GDP per capita?
+To answer this question, we will use different regressions that will take GDP per capita with purchasing power parity as the dependent variable (that is, the one we want to explain) and the economic freedom score of the Heritage Foundation as the independent or explanatory variable.
+All data was extracted from: https://www.heritage.org/index/excel/2021/index2021_data.xls</description>
+    </item>
+    
+    <item>
+      <title>Project I: SUBE personal data scraper and cleaner</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/post/chapter-1/</link>
+      <pubDate>Sun, 30 Jan 2022 10:58:08 -0400</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/post/chapter-1/</guid>
+      <description>A Python scraper that access the SUBE&amp;rsquo;s (Buenos Aires&amp;rsquo;s public transportation system) data of a particular person and then scrapes the information and adds it to an excel file. This file was then used to do some basic analysis and visualizations in PowerBi.
+How it works The scrape is done using python&amp;rsquo;s Selenium module which opens the browser, fill the credentials and then scrapes the data. It allows a much faster collection of the data than doing it by hand and it is intended to be ran at periodical intervals to track the person&amp;rsquo;s public transport use.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/about/</guid>
+      <description>I&amp;rsquo;m an economist skilled in data analysis, science, and engineering with a strong quantitative background and over three years of work experience. I&amp;rsquo;ve cleaned large datasets, identified patterns with statistical analysis, made predictions with machine learning, developed databases, created data pipelines, and automated data workflows.
+My work experience consist in roles ranging from visual data analysis and reporting, to cybersecurity and data engineering. I&amp;rsquo;ve also done work buuilding data science models as a contractor and currently hold a teaching position in a private data science course.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/contact/</guid>
+      <description>Follow me on these social media platforms.
+Platform URL LinkedIn: https://www.linkedin.com/in/gabriel-quinteros-berocay/ GitHub: https://github.com/Gabeeh94 Contact me through these channels
+E-mail:	gabrielquinteros94@hotmail.com
+Phone:	+54 9 11 2461 0759</description>
+    </item>
+    
+  </channel>
+</rss>

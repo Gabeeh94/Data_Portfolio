@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Gabriel Quinteros</title>
+    <link>https://gabeeh94.github.io/Data_Portfolio/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Gabriel Quinteros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Dec 2022 11:14:48 -0400</lastBuildDate><atom:link href="https://gabeeh94.github.io/Data_Portfolio/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project IV: Clustering of server profiles</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/post/chapter-4/</link>
+      <pubDate>Sun, 04 Dec 2022 11:14:48 -0400</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/post/chapter-4/</guid>
+      <description>For this project, my client provided a database with a number of profiles which had a different set of profiles. The objective was:
+Clustering the profiles with similar accesses Selecting base profiles for each cluster For each profile that is not a base profile, get a list of all the accesses that differ with the base profile of its own cluster To complete this I used a machine learning algorithm called &amp;ldquo;K-Modes&amp;rdquo; similar to the well-known k-means but used for categorical data, that is, non-numerical data like text, characteristics, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

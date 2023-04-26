@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scraping on Gabriel Quinteros</title>
+    <link>https://gabeeh94.github.io/Data_Portfolio/tags/scraping/</link>
+    <description>Recent content in scraping on Gabriel Quinteros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jan 2022 10:58:08 -0400</lastBuildDate><atom:link href="https://gabeeh94.github.io/Data_Portfolio/tags/scraping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project I: SUBE personal data scraper and cleaner</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/post/chapter-1/</link>
+      <pubDate>Sun, 30 Jan 2022 10:58:08 -0400</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/post/chapter-1/</guid>
+      <description>A Python scraper that access the SUBE&amp;rsquo;s (Buenos Aires&amp;rsquo;s public transportation system) data of a particular person and then scrapes the information and adds it to an excel file. This file was then used to do some basic analysis and visualizations in PowerBi.
+How it works The scrape is done using python&amp;rsquo;s Selenium module which opens the browser, fill the credentials and then scrapes the data. It allows a much faster collection of the data than doing it by hand and it is intended to be ran at periodical intervals to track the person&amp;rsquo;s public transport use.</description>
+    </item>
+    
+  </channel>
+</rss>

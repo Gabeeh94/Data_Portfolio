@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Gabriel Quinteros</title>
+    <link>https://gabeeh94.github.io/Data_Portfolio/tags/python/</link>
+    <description>Recent content in Python on Gabriel Quinteros</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Mar 2022 11:13:32 -0400</lastBuildDate><atom:link href="https://gabeeh94.github.io/Data_Portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project III: Suicide Rate Analysis using SQL and Python</title>
+      <link>https://gabeeh94.github.io/Data_Portfolio/post/chapter-3/</link>
+      <pubDate>Wed, 09 Mar 2022 11:13:32 -0400</pubDate>
+      
+      <guid>https://gabeeh94.github.io/Data_Portfolio/post/chapter-3/</guid>
+      <description>An analysis of the suicide rate in the world using SQL and Python to clean and extrapolate conclusions from the data including a regression and an ANOVA test to see if there is a relationship between GDP per Capita or Sunshine level and the suicide rate.
+Data Loading and Cleaning Sources:
+Suicide rate (World Health Organzation): https://www.who.int/data/gho/data/indicators/indicator-details/GHO/crude-suicide-rates-(per-100-000-population)
+GDP per Capita PPP (World Bank): https://databank.worldbank.org/reports.aspx?source=2&amp;amp;series=NY.GDP.PCAP.PP.CD&amp;amp;country=
+Mean Annual Sunshine Hours (United Nations): https://data.</description>
+    </item>
+    
+  </channel>
+</rss>
