@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project V: Economic Data Python/AWS Web Dashboard | Gabriel Quinteros</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Cloud Deployment">
+    <meta name="generator" content="Hugo 0.111.3">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="https://gabeeh94.github.io/Data_Portfolio/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project V: Economic Data Python/AWS Web Dashboard" />
+<meta property="og:description" content="Cloud Deployment" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gabeeh94.github.io/Data_Portfolio/post/chapter-4/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-07-15T11:14:48-04:00" />
+<meta property="article:modified_time" content="2024-07-15T11:14:48-04:00" /><meta property="og:site_name" content="Gabriel Quinteros" />
+<meta itemprop="name" content="Project V: Economic Data Python/AWS Web Dashboard">
+<meta itemprop="description" content="Cloud Deployment"><meta itemprop="datePublished" content="2024-07-15T11:14:48-04:00" />
+<meta itemprop="dateModified" content="2024-07-15T11:14:48-04:00" />
+<meta itemprop="wordCount" content="109">
+<meta itemprop="keywords" content="Cloud Deployment," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project V: Economic Data Python/AWS Web Dashboard"/>
+<meta name="twitter:description" content="Cloud Deployment"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('https://gabeeh94.github.io/Data_Portfolio/images/arg-dashboard.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://gabeeh94.github.io/Data_Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Gabriel Quinteros
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://gabeeh94.github.io/Data_Portfolio/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://gabeeh94.github.io/Data_Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://gabeeh94.github.io/Data_Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/Gabeeh94" target="_blank" rel="noopener" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="https://www.linkedin.com/in/gabriel-quinteros-berocay/" target="_blank" rel="noopener" class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Project V: Economic Data Python/AWS Web Dashboard</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Cloud Deployment
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+      
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://gabeeh94.github.io/Data_Portfolio/post/chapter-5/&amp;title=Project%20V:%20Cloud%20Hosted%20Dashboard%20" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
+        
+        <span class="icon"> <svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+        
+      </a>
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project V: Economic Data Python/AWS Web Dashboard</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-07-15T11:14:48-04:00">July 15, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Objective: Visualize different economic metrics for the Argentinian government in a Python powered Dash/Flask web dashboard using an AWS cloud backend.</p>
+
+<p>Live Dashboard: <a href="http://argentina-kpis-env.eba-nupkvbbn.us-east-2.elasticbeanstalk.com/">http://argentina-kpis-env.eba-nupkvbbn.us-east-2.elasticbeanstalk.com/</a></p>
+
+<p><strong>The need for a web dashboard</strong></p>
+<p>Argentina is facing a deep crisis, and constant data is needed to monitor the situation. Public institutions, think tanks, and consultants are hard at work every day, producing countless graphs and reports to make sense of Argentina&#39;s situation. In this fast-paced environment, there are hardly any online graphs fed with live data to base your analysis on.</p>
+
+<p>Plus, a new API was launched by the BCRA at the beginning of 2024. It provides excellent metrics for economic analysis, now with the added benefit of being live from the source. This API offers real-time data on inflation, exchange rates, and other key economic indicators, which can be crucial for making timely decisions and understanding the immediate impacts of policy changes.</p>
+
+<p>That&#39;s why I decided to take matters into my own hands and start a live web dashboard, fed with the most updated information Argentina has to offer. By building this dashboard, I aim to provide a valuable tool for analysts, policymakers, and anyone interested in staying informed about Argentina&#39;s economic situation in real time. This live dashboard will make it easier to spot trends, react to changes quickly, and make more informed decisions.</p>
+<p><strong>Building Production-Level Dashboards</strong></p>
+
+<p>As a data analyst, I&#39;m always using tools like PowerBI to make data available to stakeholders. But anyone who has used these tools extensively knows that building production-level dashboards can be quite a challenge. The benefits of PowerBI can also be its weaknesses: it&#39;s easy for someone with no experience to create something useful, but its high-level nature means it can&#39;t abstract as much as a pure programming language. It solves 90% of problems quickly, but the remaining 10% can be extremely difficult, requiring complex workarounds or proving impossible to address. And the lack of effective collaboration tools and robust version control just makes matters worse.</p>
+
+<p>I use extensively python in my day-to-day tasks, so I thought, &quot;There has to be a more programmatic way to create dashboards in python.&quot; And, of course, with Python, there are several libraries that can help. I decided to build my project using the Dash library. Streamlit is a simpler option, but I wanted the most customizable dashboard possible. Dash uses Plotly for graphs, so any data analyst familiar with Python can use it, and it wraps everything with Flask to create a simple web app.</p>
+<p>As I recently got certified in AWS, I decided to do a cloud deployment in with AWS Elastic Beanstalk and then customize supporting infrastructure going from there.</p>
+<p><strong>Drawing the roadmap.</strong></p>
+<p>The development was completed in the following stages:</p>
+<p><strong>1. **</strong>Feature Listing:** Description of the dashboard features and functionality</p>
+<p><strong>2. **</strong>Sources Definition:** Research about the feasibility of this features based on data availability.</p>
+<p><strong>3. **</strong>Dashboard Design:** Creation of a layout sketch in Figma</p>
+<p><strong>4. **</strong>Web App Development:** Development of the frontend and backend of the web application.</p>
+<p><strong>5. **</strong>Cloud Deployment:** Deployment of the Web App in AWS</p>
+<p><strong>Stage 1: Feature Listing</strong></p>
+<p>The dashboard will serve as a comprehensive tool for analyzing Argentina&#39;s economic situation, structured into several tabs. Each tab will focus on different aspects of the economy, providing users with an intuitive way to navigate through various metrics. For the initial phase, I will focus on the Monetary Data tab.</p>
+<p><strong>Monetary Data</strong></p>
+<p>This tab will showcase the most critical data related to monetary policy, allowing users to monitor key economic indicators effectively. The graphs included will feature:</p>
+<ul>
+<li>Monetary aggregates with month-to-month variation and nominal changes (M0, M1, M2).</li>
+<li>Central Bank liabilities, including LELIQs and PASEs.</li>
+<li>Monthly inflation, categorized into core, seasonal, and controlled services.</li>
+<li>Expected inflation derived from REM and CER bond yields.</li>
+<li>A comparison of real and nominal monetary policy rates against expected USD devaluation.</li>
+</ul>
+<p><strong>Fiscal Data</strong></p>
+<p>In future iterations, a Fiscal Data tab will be added to provide insights into government finances. This tab will include:</p>
+<ul>
+<li>Monthly government spending, broken down by concept.</li>
+<li>Monthly government tax revenues.</li>
+<li>Monthly debt payments.</li>
+<li>Gross and net BCRA reserves.</li>
+<li>Expected fiscal balance projections.</li>
+</ul>
+<p><strong>Financial Data</strong></p>
+<p>Another upcoming tab will focus on Financial Data, offering a snapshot of the financial landscape. Key metrics will include:</p>
+<ul>
+<li>Country risk assessments.</li>
+<li>MERVAL index performance and leading stocks.</li>
+<li>Government bond prices and yields.</li>
+<li>Exchange rates (official, MEP/CCL, and blue).</li>
+<li>The multilateral exchange rate.</li>
+</ul>
+<p><strong>Real Economy Data</strong></p>
+<p>Lastly, the Real Economy Data tab will cover broader economic indicators, featuring:</p>
+<ul>
+<li>Industrial production index with monthly variations.</li>
+<li>Idle capacity and EMAE (Encuesta Mensual de Actividad Económica).</li>
+<li>Balance of Payments.</li>
+<li>Volume of MULC (Mercado Único y Libre de Cambios) operations.</li>
+</ul>
+<p>This structured approach will ensure that users can easily access and analyze vital economic indicators, enhancing their understanding of Argentina&#39;s economic landscape over time.</p>
+<p><strong>Stage 2**</strong>: Sources Definition**</p>
+
+<p>To ensure the dashboard is comprehensive and up to date, I will feed it with data from a combination of sources. I will use the newly launched API from the Central Bank of Argentina (BCRA) to obtain real-time monetary data. For inflation statistics, I will scrape data from INDEC, Argentina&#39;s national statistics and census institute. Additionally, I will scrape dollar futures information from MATBA-ROFEX, Argentina&#39;s leading futures and options market. By integrating these three sources, the dashboard will provide a holistic view of Argentina&#39;s economic landscape, offering users real-time insights into key financial indicators.</p>
+<p>To gather the necessary data for the dashboard, I implemented a multi-step process tailored to each source. For the Central Bank of Argentina (BCRA), I utilized Python&#39;s requests library to access their API. Initially, I had to map out the API endpoints, as the documentation was sparse. This involved making test requests and analyzing the returned data structures to understand how to extract the relevant monetary data effectively.</p>
+<p>For inflation data from INDEC, I employed a combination of Beautiful Soup and requests. First, I used Beautiful Soup to scrape the INDEC website and locate the link to the updated inflation Excel file. After finding the correct link, I used requests to download the file programmatically, ensuring I always have the latest inflation statistics available for the dashboard.</p>
+
+<p>Finally, for dollar futures information from MATBA-ROFEX, I took a different approach. I reverse-engineered their API by inspecting the network requests made by my browser when accessing their website. This involved using browser developer tools to analyze the data being sent and received during interactions, allowing me to construct my own API calls without relying on any public APIs. By following these steps, I ensured that the dashboard is continuously fed with accurate and up-to-date economic data from reliable sources.</p>
+
+<p><strong>Stage 3: Dashboard Design</strong></p>
+
+<p>I decided to use Figma to create the web app mockup because it&#39;s a powerful design tool widely used in the industry for its versatility and ease of use. Figma excels in UX/UI design, making it perfect for designing a web dashboard. Its intuitive interface allows for rapid prototyping and wireframing, which is essential for planning the layout and user interactions of the dashboard. With Figma, I can create a clean and user-friendly interface that effectively presents Argentina&#39;s economic data.</p>
+
+<p>Figma&#39;s ability to create detailed designs is invaluable, allowing for a thorough visualization of the user experience before development begins. This ensures the final product is both functional and user-friendly. Additionally, using Figma means adhering to current best practices and industry standards, resulting in a polished and professional web dashboard. Its efficiency in creating detailed designs will streamline the development process, making it easier to bring the project to life.</p>
+<p>The design is here:</p>
+
+<p><a href="https://www.figma.com/file/rB8B13r6GZiHk2PON9bbsQ/Government-KPIs-Dashboard?type=design&amp;node-id=0%3A1&amp;mode=dev&amp;t=DoRAwaUQXKcogOV6-1"><strong>https://www.figma.com/file/rB8B13r6GZiHk2PON9bbsQ/Government-KPIs-Dashboard?type=design&amp;node-id=0%3A1&amp;mode=dev&amp;t=DoRAwaUQXKcogOV6-1</strong></a></p>
+<p><strong>Stage 4: Web App Development</strong></p>
+<p>I&#39;m utilizing Dash and Plotly to create an interactive experience. Plotly allows me to generate detailed visualizations like bar graphs and line charts, which display critical metrics such as base money variation and inflation rates. The code lets me customize these graphs easily, ensuring clarity and effective communication of the data.</p>
+
+<p>Dash is responsible for structuring the web application. It provides components that help organize the layout, such as dcc.Graph for embedding the Plotly figures. This integration means that the graphs are not only visually engaging but also interactive, allowing for a more in-depth exploration of the data.</p>
+<p>In addition to static visualizations, Dash supports callbacks that can make the dashboard responsive to user inputs, such as dropdown menus for selecting different economic indicators. This feature enhances the user experience by providing real-time data updates.</p>
+<p><strong>Stage 5: Deployment</strong></p>
+
+<p>To deploy the web dashboard using AWS Elastic Beanstalk, I took advantage of its streamlined process, which simplifies managing application infrastructure. Here&#39;s how I approached the deployment:</p>
+
+<ol>
+<li><p><strong>Application Preparation:</strong></p>
+</li>
+<li><p>I packaged the Dash application along with its dependencies into a single directory. This included the main Python script and a requirements.txt file specifying all necessary libraries.</p>
+</li>
+<li><p><strong>Environment Setup:</strong></p>
+</li>
+<li><p>In the AWS Management Console, I created a new Elastic Beanstalk environment for the application, selecting the Python platform, which is compatible with Dash.</p>
+</li>
+<li><p><strong>Uploading the Application:</strong></p>
+</li>
+<li><p>After setting up the environment, I uploaded the packaged application. Elastic Beanstalk automatically provisions the necessary resources, such as EC2 instances and security groups.</p>
+</li>
+<li><p><strong>Configuration:</strong></p>
+</li>
+<li><p>I configured environment settings to optimize performance, including instance type and scaling options, ensuring the application can handle varying loads efficiently.</p>
+</li>
+<li><p><strong>Deployment:</strong></p>
+</li>
+<li><p>The application was deployed smoothly through Elastic Beanstalk, which initialized everything and made the dashboard accessible online.</p>
+</li>
+<li><p><strong>Monitoring:</strong></p>
+</li>
+<li><p>I utilized the Elastic Beanstalk dashboard to monitor application health, manage scaling, and view logs, which helped in maintaining optimal performance and quickly addressing any issues.</p>
+</li>
+</ol>
+<p>With this deployment completed, I can now focus on enhancing the dashboard&#39;s features, knowing that Elastic Beanstalk is handling the infrastructure management seamlessly. This allows for efficient delivery of real-time economic insights to users.</p>
+
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="https://gabeeh94.github.io/Data_Portfolio/post/chapter-3/">Project III: Suicide Rate Analysis using SQL and Python</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://gabeeh94.github.io/Data_Portfolio/" >
+    &copy;  Gabriel Quinteros 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/Gabeeh94" target="_blank" rel="noopener" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="https://www.linkedin.com/in/gabriel-quinteros-berocay/" target="_blank" rel="noopener" class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
